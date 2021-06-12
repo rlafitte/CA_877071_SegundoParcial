@@ -38,12 +38,11 @@ namespace _2doParcial_877071.GUI
             _tpf.Id = 1;
             _tpf.Desc = "Plazo Fijo Web";
             _tpf.Tasa = 41;
-            cbTipoPlazoFijo.Items.Add(_tpf);
-            
+            cbTipoPlazoFijo.Items.Add(_tpf.Id.ToString()); // A REVISAR!!!
              _tpf.Id = 2;
             _tpf.Desc = "Plazo Fijo UVA";
             _tpf.Tasa = 3;
-            cbTipoPlazoFijo.Items.Add(_tpf);
+            cbTipoPlazoFijo.Items.Add(_tpf.Id.ToString());
             }
 
         private void Form1_Load(object sender, EventArgs e)
