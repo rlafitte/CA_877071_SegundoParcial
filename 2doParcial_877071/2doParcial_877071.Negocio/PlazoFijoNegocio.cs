@@ -35,5 +35,18 @@ namespace _2doParcial_877071.Negocio
             double d = _pf.InteresCalculado(cap, dias, tasa);
             return d.ToString("0.00");
         }
+
+        public string CalcularMontoFinal(string cap, string dias, string tasa)
+        {
+            double d = _pf.MontoFinal();
+            return d.ToString("0.00");
+        }
+        public void ValidarMontoMaximo(double d)
+        {
+            if (d > 1000000)
+            {
+                throw new Exception("Monto máximo a invertir: $1.000.000");
+            }
+        }
     }
 }

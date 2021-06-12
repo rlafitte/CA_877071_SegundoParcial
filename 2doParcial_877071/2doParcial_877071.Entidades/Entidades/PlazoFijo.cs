@@ -15,8 +15,7 @@ namespace _2doParcial_877071.Entidades.Entidades
         private int _dias;
         private double _capitalInicial;
         private string _usuario;
-        private double _interes;
-        private double _montoFinal;
+
 
         public int Id { get => _id; set => _id = value; }
         public int IdCliente { get => _idCliente; set => _idCliente = value; }
@@ -25,10 +24,9 @@ namespace _2doParcial_877071.Entidades.Entidades
         public int Dias { get => _dias; set => _dias = value; }
         public double CapitalInicial { get => _capitalInicial; set => _capitalInicial = value; }
         public string Usuario { get => _usuario; set => _usuario = value; }
-        public double Interes { get => _interes; set => _interes = value; }
-        public double MontoFinal { get => _montoFinal; set => _montoFinal = value; }
 
-        public PlazoFijo(int id, int idCliente, int tipo, double tasa, int dias, double capitalInicial, string usuario, double interes, double montoFinal)
+
+        public PlazoFijo(int id, int idCliente, int tipo, double tasa, int dias, double capitalInicial, string usuario)
         {
             Id = id;
             IdCliente = idCliente;
@@ -38,7 +36,7 @@ namespace _2doParcial_877071.Entidades.Entidades
             CapitalInicial = capitalInicial;
             Usuario = usuario;
             //Interes = interes;
-            MontoFinal = montoFinal;
+            //MontoFinal = montoFinal;
         }
         public PlazoFijo()
         {
@@ -58,6 +56,13 @@ namespace _2doParcial_877071.Entidades.Entidades
             //((tasa / 365 * dias) * CapitalInicial) / 100)
 
             return (t / (365 * i) * d / 100);
+        }
+
+        public double MontoFinal()
+        {
+
+            double d4 =    this.InteresCalculado(this.CapitalInicial.ToString(), this.Dias.ToString(), this.Tasa.ToString());
+            return (this.CapitalInicial + d4);
         }
     }
 }

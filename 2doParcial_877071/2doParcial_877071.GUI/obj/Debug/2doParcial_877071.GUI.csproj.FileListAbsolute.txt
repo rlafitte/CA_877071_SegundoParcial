@@ -1,3 +1,8 @@
+C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\2doParcial_877071.GUI.csprojAssemblyReference.cache
+C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\_2doParcial_877071.GUI.Form1.resources
+C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\_2doParcial_877071.GUI.Properties.Resources.resources
+C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\2doParcial_877071.GUI.csproj.GenerateResource.cache
+C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\2doParcial_877071.GUI.csproj.CoreCompileInputs.cache
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\bin\Debug\2doParcial_877071.GUI.exe.config
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\bin\Debug\2doParcial_877071.GUI.exe
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\bin\Debug\2doParcial_877071.GUI.pdb
@@ -9,11 +14,6 @@ C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_87707
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\bin\Debug\2doParcial_877071.Negocio.pdb
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\bin\Debug\2doParcial_877071.Datos.pdb
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\bin\Debug\Newtonsoft.Json.xml
-C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\2doParcial_877071.GUI.csprojAssemblyReference.cache
-C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\_2doParcial_877071.GUI.Form1.resources
-C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\_2doParcial_877071.GUI.Properties.Resources.resources
-C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\2doParcial_877071.GUI.csproj.GenerateResource.cache
-C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\2doParcial_877071.GUI.csproj.CoreCompileInputs.cache
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\2doParcial_877071.GUI.csproj.CopyComplete
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\2doParcial_877071.GUI.exe
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.GUI\obj\Debug\2doParcial_877071.GUI.pdb

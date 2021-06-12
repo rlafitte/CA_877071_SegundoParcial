@@ -65,12 +65,13 @@ namespace _2doParcial_877071.GUI
             try
             {
             
+
             PlazoFijo pf = new PlazoFijo();
             _plNeg.AltaPlazoFijo(pf);
             }
-            catch
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -105,11 +106,12 @@ namespace _2doParcial_877071.GUI
         {
             try
             {
+                _plNeg.ValidarMontoMaximo(Convert.ToDouble(tbCapAInvert.Text));
                 tbIntARecib.Text = _plNeg.CalcularInteres(tbCapAInvert.Text, tbDias.Text, tbTasaInt.Text);
             }
-            catch
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
 

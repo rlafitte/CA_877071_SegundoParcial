@@ -1,11 +1,11 @@
+C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\obj\Debug\2doParcial_877071.Datos.csprojAssemblyReference.cache
+C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\obj\Debug\2doParcial_877071.Datos.csproj.CoreCompileInputs.cache
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\bin\Debug\2doParcial_877071.Datos.dll
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\bin\Debug\2doParcial_877071.Datos.pdb
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\bin\Debug\2doParcial_877071.Entidades.dll
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\bin\Debug\Newtonsoft.Json.dll
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\bin\Debug\2doParcial_877071.Entidades.pdb
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\bin\Debug\Newtonsoft.Json.xml
-C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\obj\Debug\2doParcial_877071.Datos.csprojAssemblyReference.cache
-C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\obj\Debug\2doParcial_877071.Datos.csproj.CoreCompileInputs.cache
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\obj\Debug\2doParcial_877071.Datos.csproj.CopyComplete
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\obj\Debug\2doParcial_877071.Datos.dll
 C:\Users\renar\Desktop\2do parcial CAI\CA_877071_SegundoParcial\2doParcial_877071\2doParcial_877071.Datos\obj\Debug\2doParcial_877071.Datos.pdb
