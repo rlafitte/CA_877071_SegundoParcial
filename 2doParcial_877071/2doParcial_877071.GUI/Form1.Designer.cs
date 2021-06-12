@@ -98,6 +98,7 @@ namespace _2doParcial_877071.GUI
             // 
             // tbTasaInt
             // 
+            this.tbTasaInt.Enabled = false;
             this.tbTasaInt.Location = new System.Drawing.Point(170, 80);
             this.tbTasaInt.Name = "tbTasaInt";
             this.tbTasaInt.Size = new System.Drawing.Size(100, 20);

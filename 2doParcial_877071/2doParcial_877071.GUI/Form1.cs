@@ -108,6 +108,7 @@ namespace _2doParcial_877071.GUI
             {
                 _plNeg.ValidarMontoMaximo(Convert.ToDouble(tbCapAInvert.Text));
                 tbIntARecib.Text = _plNeg.CalcularInteres(tbCapAInvert.Text, tbDias.Text, tbTasaInt.Text);
+                tbMontoFinal.Text = _plNeg.CalcularMontoFinal(tbCapAInvert.Text, tbDias.Text, tbTasaInt.Text);
             }
             catch (Exception ex)
             {

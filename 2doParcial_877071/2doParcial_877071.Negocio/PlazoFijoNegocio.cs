@@ -38,6 +38,9 @@ namespace _2doParcial_877071.Negocio
 
         public string CalcularMontoFinal(string cap, string dias, string tasa)
         {
+            _pf.CapitalInicial = Convert.ToDouble(cap);
+            _pf.Dias = Convert.ToInt32(dias);
+            _pf.Tasa = Convert.ToDouble(tasa);
             double d = _pf.MontoFinal();
             return d.ToString("0.00");
         }
