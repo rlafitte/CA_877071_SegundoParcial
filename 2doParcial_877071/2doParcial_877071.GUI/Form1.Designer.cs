@@ -46,6 +46,10 @@ namespace _2doParcial_877071.GUI
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,6 +119,7 @@ namespace _2doParcial_877071.GUI
             // 
             // tbIntARecib
             // 
+            this.tbIntARecib.Enabled = false;
             this.tbIntARecib.Location = new System.Drawing.Point(170, 188);
             this.tbIntARecib.Name = "tbIntARecib";
             this.tbIntARecib.Size = new System.Drawing.Size(100, 20);
@@ -122,6 +127,7 @@ namespace _2doParcial_877071.GUI
             // 
             // tbMontoFinal
             // 
+            this.tbMontoFinal.Enabled = false;
             this.tbMontoFinal.Location = new System.Drawing.Point(170, 223);
             this.tbMontoFinal.Name = "tbMontoFinal";
             this.tbMontoFinal.Size = new System.Drawing.Size(100, 20);
@@ -135,6 +141,7 @@ namespace _2doParcial_877071.GUI
             this.btnSimular.TabIndex = 10;
             this.btnSimular.Text = "Simular";
             this.btnSimular.UseVisualStyleBackColor = true;
+            this.btnSimular.Click += new System.EventHandler(this.btnSimular_Click);
             // 
             // btnLimpiar
             // 
@@ -144,6 +151,7 @@ namespace _2doParcial_877071.GUI
             this.btnLimpiar.TabIndex = 11;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnAtlta
             // 
@@ -157,6 +165,10 @@ namespace _2doParcial_877071.GUI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.tbMontoFinal);
@@ -200,6 +212,42 @@ namespace _2doParcial_877071.GUI
             this.label3.TabIndex = 13;
             this.label3.Text = "Tasa interés";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(66, 123);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 13);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Capital a invertir";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(66, 155);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(28, 13);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Dias";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(66, 191);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Interés a recibir";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(69, 223);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Monto final";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,6 +290,10 @@ namespace _2doParcial_877071.GUI
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }
 

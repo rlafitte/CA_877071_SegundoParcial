@@ -16,6 +16,7 @@ namespace _2doParcial_877071.GUI
     {
         private PlazoFijoNegocio _plNeg;
         private TipoPlazoFijo _tpf;
+        private Operador _op;
 
         public Form1()
         {
@@ -25,6 +26,7 @@ namespace _2doParcial_877071.GUI
             InitializeComponent();
             _plNeg = new PlazoFijoNegocio();
             _tpf = new TipoPlazoFijo();
+                _op = new Operador();
                 CargarTiposPlazosFijo();
             }
             catch
@@ -76,8 +78,55 @@ namespace _2doParcial_877071.GUI
         {
             
             
-            TipoPlazoFijo tpf = (TipoPlazoFijo)cbTipoPlazoFijo.SelectedItem;
-            tbTasaInt.Text = tpf.Id.ToString();
+            //TipoPlazoFijo tpf = (TipoPlazoFijo)cbTipoPlazoFijo.SelectedItem;
+
+            if (cbTipoPlazoFijo.SelectedItem != null)
+            {
+
+            string s = cbTipoPlazoFijo.SelectedItem.ToString();
+            // lógica a corregir hasta resolver el combox
+            if (s == "1")
+            {
+            //tbTasaInt.Text = tpf.Id.ToString();
+            tbTasaInt.Text = "41";
+
+            }
+            if (s == "2")
+            {
+            //tbTasaInt.Text = tpf.Id.ToString();
+            tbTasaInt.Text = "3";
+
+            }
+            }
+            
+        }
+
+        private void btnSimular_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                tbIntARecib.Text = _plNeg.CalcularInteres(tbCapAInvert.Text, tbDias.Text, tbTasaInt.Text);
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+
+        private void LimpiarCampos()
+        {
+            cbTipoPlazoFijo.SelectedIndex = -1;
+            tbTasaInt.Clear();
+            tbCapAInvert.Clear();
+            tbDias.Clear();
+            tbIntARecib.Clear();
+            tbMontoFinal.Clear();
+
         }
     }
 }

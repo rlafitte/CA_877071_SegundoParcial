@@ -37,7 +37,7 @@ namespace _2doParcial_877071.Entidades.Entidades
             Dias = dias;
             CapitalInicial = capitalInicial;
             Usuario = usuario;
-            Interes = interes;
+            //Interes = interes;
             MontoFinal = montoFinal;
         }
         public PlazoFijo()
@@ -48,6 +48,16 @@ namespace _2doParcial_877071.Entidades.Entidades
         public override string ToString()
         {
             return $"ID: {this.Id} - Capital inicial: {this.CapitalInicial}";
+        }
+
+        public double InteresCalculado(string cap, string dias, string tasa)
+        {
+            double d = Convert.ToDouble(cap);
+            int i = Convert.ToInt32(dias);
+            double t = Convert.ToDouble(tasa);
+            //((tasa / 365 * dias) * CapitalInicial) / 100)
+
+            return (t / (365 * i) * d / 100);
         }
     }
 }

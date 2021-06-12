@@ -45,6 +45,9 @@ namespace _2doParcial_877071.Datos.Mappers
             NameValueCollection n = new NameValueCollection();
             n.Add("id", pf.Id.ToString());
             n.Add("usuario", "877071");
+            //Tanto id como idCliente se debe enviar en 0
+            n.Add("id", "0");
+            n.Add("idCliente", "0");
             return n;
         }
 
