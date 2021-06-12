@@ -9,12 +9,21 @@ namespace _2doParcial_877071.Negocio
 {
     public class Operador
     {
-        private int _comision;
+        private double _comision = 0.15;
 
-        public List<PlazoFijo> ListarPlazosFijos()
+        public List<PlazoFijo> ListarPlazosFijos(List<PlazoFijo> lst)
         {
             List<PlazoFijo> _lista = new List<PlazoFijo>();
             return _lista;
+        }
+
+        public double MontoTotal(List<PlazoFijo> lst)
+        {
+            return (lst.Sum(o => o.CapitalInicial));
+        }
+        public double ComisionTotal(List<PlazoFijo> lst)
+        {
+            return (lst.Sum(o => o.CapitalInicial) * _comision);
         }
     }
 }

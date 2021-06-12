@@ -51,5 +51,20 @@ namespace _2doParcial_877071.Negocio
                 throw new Exception("Monto máximo a invertir: $1.000.000");
             }
         }
+
+        public void VerificarEntradas(string text1, string text2)
+        {
+            double.TryParse(text1, out double d);
+            double.TryParse(text2, out double f);
+            if (d == 0)
+            {
+                throw new Exception("valor no numérico.");
+            }
+            if (f == 0)
+            {
+                throw new Exception("valor no numérico.");
+            }
+
+        }
     }
 }

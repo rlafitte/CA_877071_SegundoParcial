@@ -17,6 +17,7 @@ namespace _2doParcial_877071.GUI
         private PlazoFijoNegocio _plNeg;
         private TipoPlazoFijo _tpf;
         private Operador _op;
+        private List<PlazoFijo> _plazos;
 
         public Form1()
         {
@@ -27,6 +28,7 @@ namespace _2doParcial_877071.GUI
             _plNeg = new PlazoFijoNegocio();
             _tpf = new TipoPlazoFijo();
                 _op = new Operador();
+                _plazos = new List<PlazoFijo>();
                 CargarTiposPlazosFijo();
             }
             catch
@@ -51,8 +53,12 @@ namespace _2doParcial_877071.GUI
         {
             try
             {
+                
                 lstPlazoFijo.DataSource = null;
                 lstPlazoFijo.DataSource = _plNeg.CargarPlazosFijos();
+                _plazos = _plNeg.CargarPlazosFijos();
+                tbMontoTotal.Text = _op.MontoTotal(_plazos).ToString("0.00");
+                tbComiTotal.Text = _op.ComisionTotal(_plazos).ToString("0.00");
             }
             catch
             {
@@ -71,6 +77,10 @@ namespace _2doParcial_877071.GUI
                 MapearCamposPlazoFijo(pf);
 
             _plNeg.AltaPlazoFijo(pf);
+                MessageBox.Show("Plazo fijo creado. Monto invertido: " + pf.CapitalInicial);
+                lstPlazoFijo.DataSource = _plNeg.CargarPlazosFijos();
+                tbMontoTotal.Text = _op.MontoTotal(_plazos).ToString("0.00");
+                tbComiTotal.Text = _op.ComisionTotal(_plazos).ToString("0.00");
             }
             catch (Exception ex)
             {
@@ -128,7 +138,9 @@ namespace _2doParcial_877071.GUI
 
         private void SimularPlazoFijo()
         {
-                _plNeg.ValidarMontoMaximo(Convert.ToDouble(tbCapAInvert.Text));
+            _plNeg.VerificarEntradas(tbCapAInvert.Text, tbDias.Text);    
+            
+            _plNeg.ValidarMontoMaximo(Convert.ToDouble(tbCapAInvert.Text));
                 tbIntARecib.Text = _plNeg.CalcularInteres(tbCapAInvert.Text, tbDias.Text, tbTasaInt.Text);
                 tbMontoFinal.Text = _plNeg.CalcularMontoFinal(tbCapAInvert.Text, tbDias.Text, tbTasaInt.Text);
 
