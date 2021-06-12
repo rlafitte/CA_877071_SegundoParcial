@@ -45,5 +45,9 @@ namespace _2doParcial_877071.Entidades.Entidades
 
         }
 
+        public override string ToString()
+        {
+            return $"ID: {this.Id} - Capital inicial: {this.CapitalInicial}";
+        }
     }
 }
