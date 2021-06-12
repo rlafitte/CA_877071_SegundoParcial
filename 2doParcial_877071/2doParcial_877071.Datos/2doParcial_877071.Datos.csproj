@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\2doParcial_877071.Entidades\2doParcial_877071.Entidades.csproj">

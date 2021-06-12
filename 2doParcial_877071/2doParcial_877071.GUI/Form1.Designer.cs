@@ -33,6 +33,11 @@ namespace _2doParcial_877071.GUI
             this.tbMontoTotal = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbComiTotal = new System.Windows.Forms.TextBox();
+            this.cbTipoPlazoFijo = new System.Windows.Forms.ComboBox();
+            this.tbTasaInt = new System.Windows.Forms.TextBox();
+            this.tbCapAInvert = new System.Windows.Forms.TextBox();
+            this.tbDias = new System.Windows.Forms.TextBox();
+            this.tbIntARecib = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lstPlazoFijo
@@ -68,11 +73,52 @@ namespace _2doParcial_877071.GUI
             this.tbComiTotal.Size = new System.Drawing.Size(100, 20);
             this.tbComiTotal.TabIndex = 3;
             // 
+            // cbTipoPlazoFijo
+            // 
+            this.cbTipoPlazoFijo.FormattingEnabled = true;
+            this.cbTipoPlazoFijo.Location = new System.Drawing.Point(79, 69);
+            this.cbTipoPlazoFijo.Name = "cbTipoPlazoFijo";
+            this.cbTipoPlazoFijo.Size = new System.Drawing.Size(121, 21);
+            this.cbTipoPlazoFijo.TabIndex = 4;
+            // 
+            // tbTasaInt
+            // 
+            this.tbTasaInt.Location = new System.Drawing.Point(79, 106);
+            this.tbTasaInt.Name = "tbTasaInt";
+            this.tbTasaInt.Size = new System.Drawing.Size(100, 20);
+            this.tbTasaInt.TabIndex = 5;
+            // 
+            // tbCapAInvert
+            // 
+            this.tbCapAInvert.Location = new System.Drawing.Point(79, 143);
+            this.tbCapAInvert.Name = "tbCapAInvert";
+            this.tbCapAInvert.Size = new System.Drawing.Size(100, 20);
+            this.tbCapAInvert.TabIndex = 6;
+            // 
+            // tbDias
+            // 
+            this.tbDias.Location = new System.Drawing.Point(79, 178);
+            this.tbDias.Name = "tbDias";
+            this.tbDias.Size = new System.Drawing.Size(100, 20);
+            this.tbDias.TabIndex = 7;
+            // 
+            // tbIntARecib
+            // 
+            this.tbIntARecib.Location = new System.Drawing.Point(79, 214);
+            this.tbIntARecib.Name = "tbIntARecib";
+            this.tbIntARecib.Size = new System.Drawing.Size(100, 20);
+            this.tbIntARecib.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tbIntARecib);
+            this.Controls.Add(this.tbDias);
+            this.Controls.Add(this.tbCapAInvert);
+            this.Controls.Add(this.tbTasaInt);
+            this.Controls.Add(this.cbTipoPlazoFijo);
             this.Controls.Add(this.tbComiTotal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbMontoTotal);
@@ -90,6 +136,11 @@ namespace _2doParcial_877071.GUI
         private System.Windows.Forms.TextBox tbMontoTotal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbComiTotal;
+        private System.Windows.Forms.ComboBox cbTipoPlazoFijo;
+        private System.Windows.Forms.TextBox tbTasaInt;
+        private System.Windows.Forms.TextBox tbCapAInvert;
+        private System.Windows.Forms.TextBox tbDias;
+        private System.Windows.Forms.TextBox tbIntARecib;
     }
 }
 
