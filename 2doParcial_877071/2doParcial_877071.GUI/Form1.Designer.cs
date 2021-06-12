@@ -42,6 +42,11 @@ namespace _2doParcial_877071.GUI
             this.btnSimular = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnAtlta = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstPlazoFijo
@@ -79,43 +84,45 @@ namespace _2doParcial_877071.GUI
             // 
             // cbTipoPlazoFijo
             // 
+            this.cbTipoPlazoFijo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTipoPlazoFijo.FormattingEnabled = true;
-            this.cbTipoPlazoFijo.Location = new System.Drawing.Point(79, 69);
+            this.cbTipoPlazoFijo.Location = new System.Drawing.Point(170, 43);
             this.cbTipoPlazoFijo.Name = "cbTipoPlazoFijo";
             this.cbTipoPlazoFijo.Size = new System.Drawing.Size(121, 21);
             this.cbTipoPlazoFijo.TabIndex = 4;
+            this.cbTipoPlazoFijo.SelectedIndexChanged += new System.EventHandler(this.cbTipoPlazoFijo_SelectedIndexChanged);
             // 
             // tbTasaInt
             // 
-            this.tbTasaInt.Location = new System.Drawing.Point(79, 106);
+            this.tbTasaInt.Location = new System.Drawing.Point(170, 80);
             this.tbTasaInt.Name = "tbTasaInt";
             this.tbTasaInt.Size = new System.Drawing.Size(100, 20);
             this.tbTasaInt.TabIndex = 5;
             // 
             // tbCapAInvert
             // 
-            this.tbCapAInvert.Location = new System.Drawing.Point(79, 143);
+            this.tbCapAInvert.Location = new System.Drawing.Point(170, 117);
             this.tbCapAInvert.Name = "tbCapAInvert";
             this.tbCapAInvert.Size = new System.Drawing.Size(100, 20);
             this.tbCapAInvert.TabIndex = 6;
             // 
             // tbDias
             // 
-            this.tbDias.Location = new System.Drawing.Point(79, 178);
+            this.tbDias.Location = new System.Drawing.Point(170, 152);
             this.tbDias.Name = "tbDias";
             this.tbDias.Size = new System.Drawing.Size(100, 20);
             this.tbDias.TabIndex = 7;
             // 
             // tbIntARecib
             // 
-            this.tbIntARecib.Location = new System.Drawing.Point(79, 214);
+            this.tbIntARecib.Location = new System.Drawing.Point(170, 188);
             this.tbIntARecib.Name = "tbIntARecib";
             this.tbIntARecib.Size = new System.Drawing.Size(100, 20);
             this.tbIntARecib.TabIndex = 8;
             // 
             // tbMontoFinal
             // 
-            this.tbMontoFinal.Location = new System.Drawing.Point(79, 249);
+            this.tbMontoFinal.Location = new System.Drawing.Point(170, 223);
             this.tbMontoFinal.Name = "tbMontoFinal";
             this.tbMontoFinal.Size = new System.Drawing.Size(100, 20);
             this.tbMontoFinal.TabIndex = 9;
@@ -131,7 +138,7 @@ namespace _2doParcial_877071.GUI
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(180, 298);
+            this.btnLimpiar.Location = new System.Drawing.Point(195, 257);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpiar.TabIndex = 11;
@@ -146,6 +153,52 @@ namespace _2doParcial_877071.GUI
             this.btnAtlta.TabIndex = 12;
             this.btnAtlta.Text = "Alta";
             this.btnAtlta.UseVisualStyleBackColor = true;
+            this.btnAtlta.Click += new System.EventHandler(this.btnAtlta_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.tbMontoFinal);
+            this.groupBox1.Controls.Add(this.btnLimpiar);
+            this.groupBox1.Controls.Add(this.cbTipoPlazoFijo);
+            this.groupBox1.Controls.Add(this.tbTasaInt);
+            this.groupBox1.Controls.Add(this.tbCapAInvert);
+            this.groupBox1.Controls.Add(this.tbIntARecib);
+            this.groupBox1.Controls.Add(this.tbDias);
+            this.groupBox1.Location = new System.Drawing.Point(47, 41);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(308, 347);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Simulador";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Location = new System.Drawing.Point(446, 41);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(308, 347);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Plazos fijos dados de alta";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(63, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Tipo Plazo Fijo";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(63, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Tasa interés";
             // 
             // Form1
             // 
@@ -153,21 +206,18 @@ namespace _2doParcial_877071.GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAtlta);
-            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnSimular);
-            this.Controls.Add(this.tbMontoFinal);
-            this.Controls.Add(this.tbIntARecib);
-            this.Controls.Add(this.tbDias);
-            this.Controls.Add(this.tbCapAInvert);
-            this.Controls.Add(this.tbTasaInt);
-            this.Controls.Add(this.cbTipoPlazoFijo);
             this.Controls.Add(this.tbComiTotal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbMontoTotal);
             this.Controls.Add(this.lstPlazoFijo);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,6 +238,10 @@ namespace _2doParcial_877071.GUI
         private System.Windows.Forms.Button btnSimular;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnAtlta;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -22,5 +22,10 @@ namespace _2doParcial_877071.Negocio
             lst = _pfMap.TraerPlazosFijos();
             return lst;
         }
+
+        public void AltaPlazoFijo(PlazoFijo pf)
+        {
+            _pfMap.AltaPlazoFijo(pf);
+        }
     }
 }
