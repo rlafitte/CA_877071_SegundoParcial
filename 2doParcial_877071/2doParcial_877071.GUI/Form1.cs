@@ -67,12 +67,24 @@ namespace _2doParcial_877071.GUI
             
 
             PlazoFijo pf = new PlazoFijo();
+                SimularPlazoFijo();
+                MapearCamposPlazoFijo(pf);
+
             _plNeg.AltaPlazoFijo(pf);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void MapearCamposPlazoFijo(PlazoFijo pf)
+        {
+                pf.Tipo = Convert.ToInt32(cbTipoPlazoFijo.SelectedItem.ToString());
+                pf.Tasa = Convert.ToDouble(tbTasaInt.Text);
+                pf.CapitalInicial = Convert.ToDouble(tbCapAInvert.Text);
+                pf.Dias = Convert.ToInt32(tbDias.Text);
+
         }
 
         private void cbTipoPlazoFijo_SelectedIndexChanged(object sender, EventArgs e)
@@ -106,14 +118,20 @@ namespace _2doParcial_877071.GUI
         {
             try
             {
-                _plNeg.ValidarMontoMaximo(Convert.ToDouble(tbCapAInvert.Text));
-                tbIntARecib.Text = _plNeg.CalcularInteres(tbCapAInvert.Text, tbDias.Text, tbTasaInt.Text);
-                tbMontoFinal.Text = _plNeg.CalcularMontoFinal(tbCapAInvert.Text, tbDias.Text, tbTasaInt.Text);
+                SimularPlazoFijo();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void SimularPlazoFijo()
+        {
+                _plNeg.ValidarMontoMaximo(Convert.ToDouble(tbCapAInvert.Text));
+                tbIntARecib.Text = _plNeg.CalcularInteres(tbCapAInvert.Text, tbDias.Text, tbTasaInt.Text);
+                tbMontoFinal.Text = _plNeg.CalcularMontoFinal(tbCapAInvert.Text, tbDias.Text, tbTasaInt.Text);
+
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)

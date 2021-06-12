@@ -15,6 +15,7 @@ namespace _2doParcial_877071.Entidades.Entidades
         private int _dias;
         private double _capitalInicial;
         private string _usuario;
+        private double _inte;
 
 
         public int Id { get => _id; set => _id = value; }
@@ -24,7 +25,7 @@ namespace _2doParcial_877071.Entidades.Entidades
         public int Dias { get => _dias; set => _dias = value; }
         public double CapitalInicial { get => _capitalInicial; set => _capitalInicial = value; }
         public string Usuario { get => _usuario; set => _usuario = value; }
-
+        public double Inte { get => _inte; set => _inte = value; }
 
         public PlazoFijo(int id, int idCliente, int tipo, double tasa, int dias, double capitalInicial, string usuario)
         {
@@ -54,7 +55,7 @@ namespace _2doParcial_877071.Entidades.Entidades
             int i = Convert.ToInt32(dias);
             double t = Convert.ToDouble(tasa);
             //((tasa / 365 * dias) * CapitalInicial) / 100)
-
+            this.Inte = t;
             return (t / (365 * i) * d / 100);
         }
 

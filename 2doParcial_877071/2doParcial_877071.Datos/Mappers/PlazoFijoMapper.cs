@@ -43,11 +43,19 @@ namespace _2doParcial_877071.Datos.Mappers
         private NameValueCollection ReverseMap(PlazoFijo pf)
         {
             NameValueCollection n = new NameValueCollection();
-            n.Add("id", pf.Id.ToString());
-            n.Add("usuario", "877071");
+            //n.Add("id", pf.Id.ToString());
+            n.Add("Usuario", "877071");
             //Tanto id como idCliente se debe enviar en 0
             n.Add("id", "0");
             n.Add("idCliente", "0");
+            n.Add("CapitalInicial", pf.CapitalInicial.ToString("0.00"));
+            n.Add("Tipo", pf.Tipo.ToString());
+            n.Add("Dias", pf.Dias.ToString());
+            //n.Add("Interes", pf.Inte.ToString("0.00"));
+            n.Add("Interes", "1");
+            n.Add("Tasa", pf.Tasa.ToString());
+
+
             return n;
         }
 
