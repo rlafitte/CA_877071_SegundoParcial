@@ -38,6 +38,10 @@ namespace _2doParcial_877071.GUI
             this.tbCapAInvert = new System.Windows.Forms.TextBox();
             this.tbDias = new System.Windows.Forms.TextBox();
             this.tbIntARecib = new System.Windows.Forms.TextBox();
+            this.tbMontoFinal = new System.Windows.Forms.TextBox();
+            this.btnSimular = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnAtlta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstPlazoFijo
@@ -109,11 +113,49 @@ namespace _2doParcial_877071.GUI
             this.tbIntARecib.Size = new System.Drawing.Size(100, 20);
             this.tbIntARecib.TabIndex = 8;
             // 
+            // tbMontoFinal
+            // 
+            this.tbMontoFinal.Location = new System.Drawing.Point(79, 249);
+            this.tbMontoFinal.Name = "tbMontoFinal";
+            this.tbMontoFinal.Size = new System.Drawing.Size(100, 20);
+            this.tbMontoFinal.TabIndex = 9;
+            // 
+            // btnSimular
+            // 
+            this.btnSimular.Location = new System.Drawing.Point(79, 298);
+            this.btnSimular.Name = "btnSimular";
+            this.btnSimular.Size = new System.Drawing.Size(75, 23);
+            this.btnSimular.TabIndex = 10;
+            this.btnSimular.Text = "Simular";
+            this.btnSimular.UseVisualStyleBackColor = true;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(180, 298);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 11;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            // 
+            // btnAtlta
+            // 
+            this.btnAtlta.Location = new System.Drawing.Point(79, 339);
+            this.btnAtlta.Name = "btnAtlta";
+            this.btnAtlta.Size = new System.Drawing.Size(176, 23);
+            this.btnAtlta.TabIndex = 12;
+            this.btnAtlta.Text = "Alta";
+            this.btnAtlta.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAtlta);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnSimular);
+            this.Controls.Add(this.tbMontoFinal);
             this.Controls.Add(this.tbIntARecib);
             this.Controls.Add(this.tbDias);
             this.Controls.Add(this.tbCapAInvert);
@@ -141,6 +183,10 @@ namespace _2doParcial_877071.GUI
         private System.Windows.Forms.TextBox tbCapAInvert;
         private System.Windows.Forms.TextBox tbDias;
         private System.Windows.Forms.TextBox tbIntARecib;
+        private System.Windows.Forms.TextBox tbMontoFinal;
+        private System.Windows.Forms.Button btnSimular;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnAtlta;
     }
 }
 
