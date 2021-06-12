@@ -17,8 +17,29 @@ namespace _2doParcial_877071.GUI
 
         public Form1()
         {
+            try
+            {
+
             InitializeComponent();
             _plNeg = new PlazoFijoNegocio();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                lstPlazoFijo.DataSource = null;
+                lstPlazoFijo.DataSource = _plNeg.CargarPlazosFijos();
+            }
+            catch
+            {
+
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using _2doParcial_877071.Datos.Mappers;
+using _2doParcial_877071.Entidades.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,11 @@ namespace _2doParcial_877071.Negocio
             _pfMap = new PlazoFijoMapper();
         }
 
+        public List<PlazoFijo> CargarPlazosFijos()
+        {
+            List<PlazoFijo> lst = new List<PlazoFijo>();
+            lst = _pfMap.TraerPlazosFijos();
+            return lst;
+        }
     }
 }
